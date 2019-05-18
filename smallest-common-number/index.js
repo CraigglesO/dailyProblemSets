@@ -1,23 +1,20 @@
-// let arr = [176, 188, 199, 200, 210, 222, 1, 10, 20, 47, 59, 63, 75, 88, 99, 107, 120, 133, 155]
-// let key = 200
+let arr1 = [6, 7, 10, 25, 30, 63, 64]
+let arr2 = [-1, 4, 5, 6, 7, 8, 50]
+let arr3 = [1, 6, 10, 14]
 
-let arr = [4, 5, 6, 1, 2, 3]
-let key = 6
+function smallestCommonNumber (arr1, arr2, arr3) {
+  let arr1Index = 0
+  let arr2Index = 0
+  let arr3Index = 0
 
-function binarySearchRotated (arr, key) {
-  let lo = 0
-  let hi = arr.length - 1
-  let mid = Math.floor(hi / 2)
-
-  do { // four cases if mid is not the value
-    if (arr[mid] === key) return mid // found
-    else if (arr[lo] < arr[mid] && arr[lo] <= key && arr[mid] > key) hi = mid - 1 // lower 50% sorted and key is within bounds
-    else if (arr[lo] > arr[mid] && arr[lo] <= key && arr[hi] < key) hi = mid - 1 // lower 50% not sorted and hi is less than key
-    else lo = mid + 1 // upper 50% is sorted or unsorted. No need for excess logic since we covered all other cases
-    mid = lo + Math.floor((hi - lo) / 2)
-  } while (lo <= hi)
+  do {
+    if (arr1[arr1Index] === arr2[arr2Index] && arr1[arr1Index] === arr3[arr3Index]) return arr1[arr1Index]
+    while (arr1[arr1Index] > arr2[arr2Index]) arr2Index++
+    while (arr2[arr2Index] > arr3[arr3Index]) arr3Index++
+    while (arr3[arr3Index] > arr1[arr1Index]) arr1Index++
+  } while (arr1Index < arr1.length && arr2Index < arr2.length && arr3Index < arr3.length)
 
   return -1
 }
 
-console.log(binarySearchRotated(arr, key))
+console.log(smallestCommonNumber(arr1, arr2, arr3))
