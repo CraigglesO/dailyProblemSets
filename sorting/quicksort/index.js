@@ -16,16 +16,19 @@ function partition (arr, lo, hi) {
   for (let j = lo; j < hi; j++) {
     if (arr[j] <= pivot) {
       i++
-      let tmp = arr[i]
-      arr[i] = arr[j]
-      arr[j] = tmp
+      if (i !== j) {
+        let tmp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = tmp
+      }
     }
   }
-  let tmp = arr[i + 1]
-  arr[i + 1] = arr[hi]
+  i++
+  let tmp = arr[i]
+  arr[i] = arr[hi]
   arr[hi] = tmp
 
-  return i + 1
+  return i
 }
 
 console.log(quickSort(arr))
