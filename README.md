@@ -8,3 +8,4 @@
 4) Smallest Common Number
 5) Rotate Array
 6) Find Low/High Index
+7) Move Zeros to the Left
