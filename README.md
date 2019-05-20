@@ -1,11 +1,14 @@
 # dailyProblemSets
 
 ## Problem List
+
 ### Arrays
-1) Binary Search
-2) Maximum in Sliding Window
-3) Search Rotated Array
-4) Smallest Common Number
-5) Rotate Array
-6) Find Low/High Index
-7) Move Zeros to the Left
+
+* Binary Search
+* Maximum in Sliding Window
+* Search Rotated Array
+* Smallest Common Number
+* Rotate Array
+* Find Low/High Index
+* Move Zeros to the Left
+* Find Maximum Single Sell Profit (Kadane's algorithm - maximum subarray problem)
