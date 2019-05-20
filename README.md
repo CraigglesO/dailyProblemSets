@@ -12,3 +12,8 @@
 * Find Low/High Index
 * Move Zeros to the Left
 * Find Maximum Single Sell Profit (Kadane's algorithm - maximum subarray problem)
+
+
+### Sorting
+
+* QuickSort
