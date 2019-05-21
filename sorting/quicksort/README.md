@@ -1,12 +1,16 @@
 # QuickSort
 
-## Problem Statement
-Given a list of daily stock prices (integers for simplicity), return the buy and sell prices for making the maximum profit.
-
-We need to maximize the single buy/sell profit. If we can't make any profit, we'll try to minimize the loss. For the below examples, buy and sell prices for making maximum profit are highlighted.
+## References
+https://en.wikipedia.org/wiki/Quicksort
+https://www.youtube.com/watch?v=MZaf_9IZCrc
 
 ## Runtime Complexity
+### Best
 O(n * log(n))
+### Average
+O(n * log(n))
+### Worst
+O(n^2)
 
 ## Memory Complexity
 O(log(n)) (recursive)

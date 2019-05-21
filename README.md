@@ -16,4 +16,19 @@
 
 ### Sorting
 
-* QuickSort
+* Quick Sort
+// TODO
+* Heap Sort
+* Insertion Sort
+* Merge Sort
+* Tim Sort
+
+* Radix Sort
+
+* Bubble Sort
+* Selection Sort
+* Tree Sort
+* Shell Sort
+* Bucket Sort
+* Counting Sort
+* Cube Sort
