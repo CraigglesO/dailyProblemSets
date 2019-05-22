@@ -10,25 +10,26 @@ function quickSort (arr, lo = 0, hi = arr.length - 1) {
   return arr
 }
 
+// simply: choose a pivot, find all values less than pivot and put in front, than place pivot after said values
 function partition (arr, lo, hi) {
-  let pivot = arr[hi]
+  let pivot = arr[hi] // get pivot value (this case we always use upper [worst case performance if the pivot is the largest number in the current array])
   let i = lo - 1
-  for (let j = lo; j < hi; j++) {
-    if (arr[j] <= pivot) {
+  for (let j = lo; j < hi; j++) { // for the entirely of the array
+    if (arr[j] <= pivot) { // check if the current value is less than pivot
       i++
-      if (i !== j) {
-        let tmp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = tmp
-      }
+      if (i !== j) swap(arr, i, j) // modification - don't run a SWAP if the indexes are equal
     }
   }
   i++
-  let tmp = arr[i]
-  arr[i] = arr[hi]
-  arr[hi] = tmp
+  swap(arr, i, hi) // now put the pivot after all the values we found in the array to be less than pivot
 
   return i
+}
+
+function swap (arr, i, j) {
+  let tmp = arr[i]
+  arr[i] = arr[j]
+  arr[j] = tmp
 }
 
 console.log(quickSort(arr))
