@@ -1,5 +1,7 @@
 # QuickSort
 
+Divide and conquer algorithm
+
 ## References
 https://en.wikipedia.org/wiki/Quicksort
 https://www.youtube.com/watch?v=MZaf_9IZCrc
