@@ -18,11 +18,11 @@
 
 ### Sorting
 
+* Insertion Sort
+* Merge Sort
 * Quick Sort
 // TODO
 * Heap Sort
-* Insertion Sort
-* Merge Sort
 * Tim Sort
 
 * Radix Sort
